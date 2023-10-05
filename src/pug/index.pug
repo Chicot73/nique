@@ -1,0 +1,16 @@
+extends layout/app
+
+block page
+    include chunk/header
+
+    h1.title Главная
+
+    p Привет!
+
+    img(src="img/myface_md2.jpg", alt="мое лицо", width="500")
+
+    ul.news
+        each item in news
+            li= item.name
+
+    include chunk/footer
