@@ -1,0 +1,26 @@
+nav.navigation.hide(id="downmenu")
+    a(title="Working Hours", id="clocks")
+        img(src="img/time.svg", alt="Working hours")
+    a(onclick="menuFn()") Menu
+    a(onclick="restaurantFn()") Restaurant
+    a(onclick="classesFn()") Classes
+    a(href="#") Book a Table
+        aside.times.hidden(id="times")
+            table
+                caption Opening Hours
+
+                tbody
+                    tr
+                        td.firstcol Mon
+
+                        td.lastcol closed
+
+                    tr
+                        td.firstcol Tue - Fri
+
+                        td.lastcol 4pm - 8pm
+
+                    tr
+                        td.firstcol Sat - Sun
+
+                        td.lastcol 5pm - 11pm

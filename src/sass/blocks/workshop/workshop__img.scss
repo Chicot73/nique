@@ -1,0 +1,10 @@
+.workshop__img {
+    width: 50%;
+    height: 100vh;
+
+    & img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}

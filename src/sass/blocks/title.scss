@@ -1,6 +1,23 @@
 .title {
-    text-transform: uppercase;
-    @include ph {
-        text-align: center;
+    text-align: center;
+    font-family: 'Bitter Rose DEMO';
+    font-weight: 400;
+    font-size: 8rem;
+    line-height: 90%;
+    color: #FACE8D;
+    user-select: none;
+    letter-spacing: .03em;
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    span {
+        font-family: 'Chillax-Medium';
+        font-weight: 500;
+        font-size: 16rem;
+        line-height: .9;
+        color: #FFFFFF;
+        letter-spacing: 0;
     }
 }

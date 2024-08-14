@@ -1,0 +1,22 @@
+.details__flex {
+    display: flex;
+    justify-content: space-between;
+    height: 9rem;
+    align-items: center;
+    padding: 0;
+    border-bottom: .1rem solid;
+    border-color: #1e1e1e;
+
+    &:first-child {
+        height: 5.6rem;
+        margin-top: 2rem;
+        align-items: flex-start;
+    }
+
+    &:last-child {
+        height: 11.1rem;
+        align-items: flex-start;
+        padding-top: 2.4rem;
+        border-bottom: none;
+    }
+}

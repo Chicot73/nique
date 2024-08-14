@@ -1,0 +1,99 @@
+extends layout/app-asian
+
+block page
+
+    nav.navigation2
+        a(title="Working Hours", id="clocks")
+            img(src="img/time.svg", alt="Working hours")
+        a(href="index.html#menu_dummy") Menu
+        a(href="index.html#restaurant_dummy") Restaurant
+        a(href="index.html#classes") Classes
+        a(href="index.html") Book a Table
+            aside.times.hidden(id="times")
+                table
+                    caption Opening Hours
+
+                    tbody
+                        tr
+                            td.firstcol Mon
+
+                            td.lastcol closed
+
+                        tr
+                            td.firstcol Tue - Fri
+
+                            td.lastcol 4pm - 8pm
+
+                        tr
+                            td.firstcol Sat - Sun
+
+                            td.lastcol 5pm - 11pm
+
+    include chunk/mixins
+
+    .fixed.workshop__img
+        img(src="img/class52.jpg", alt="asian")
+
+    section.workshop
+        .workshop__dummy
+        .wrapper
+            .left.workshop__title
+                .workshop__logo
+                    a(href="#", title="main") nique.
+
+                h1.title2(id="asian") Workshop<br>
+                    span Delicious Breakfast
+                    
+            .right
+                .workshop__wrapper
+                    .top
+                        h2.top__title Reserve Your Spot
+                        p.top__article
+                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                            | eiusmod tempor incididunt ut labore et dolore magna aliqua. Porttitor 
+                            | massa id neque aliquam.
+                    
+                    .book
+                        a.book__button Book a Spot
+                        p.book__cost 89€
+
+                    .article
+                        h3.title3 Details
+
+                        +workshop_details(
+                            "June 16, 2023 8:00 PM",
+                            "img/teacher01.jpg",
+                            "Jakob Grønberg",
+                            "English",
+                            "nique.",
+                            "Main Street 16",
+                            "10629 Berlin"
+                            )
+
+                    .article
+                        h3.title3 Menu
+
+                        +workshop_menu(
+                            "img/image-1.png",
+                            "Noodle Soup",
+                            "Lorem ipsum dolor sit amet, consectetur"
+                            )
+
+                        +workshop_menu(
+                            "img/image-8.png",
+                            "Sea Curry",
+                            "Lorem ipsum dolor sit amet, consectetur"
+                            )
+
+                    .article
+                        h3.title3 Teacher
+
+                        +workshop_teacher(
+                            "img/teacher01.jpg",
+                            "Jakob Grønberg",
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+                            )
+
+    include chunk/footer
+
+    script(src="js/workshop.js")

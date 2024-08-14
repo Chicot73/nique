@@ -1,16 +1,33 @@
 extends layout/app
 
 block page
+
     include chunk/header
 
-    h1.title Главная!!!
+    include chunk/navigation
 
-    p Привет!
+    section.section.hero
+        h1.title The pure taste of <br>
+            span Thailand
+            p.titledesc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
 
-    img(src="img/myface_md2.jpg", alt="мое лицо", width="500")
+        .mouse
+            .mouse__roller
+            .mouse__dummy
 
-    ul.news
-        each item in news
-            li= item.name
+    include chunk/restaurant
+
+    .fixed
+        img(src="img/main.avif", alt="bg")
+
+    .fixed.menu__img
+        img(src="img/menu.jpg", alt="menu")
+
+    include chunk/menu
+
+    include chunk/classes
 
     include chunk/footer
+
+    script(src="js/main.js")
+    script(src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js")

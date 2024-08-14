@@ -1,0 +1,28 @@
+.title2 {
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 37rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 2;
+    text-align: center;
+    font-family: 'Bitter Rose DEMO';
+    font-weight: 400;
+    font-size: 8rem;
+    line-height: 90%;
+    color: #FACE8D;
+    user-select: none;
+    letter-spacing: .03em;
+
+    span {
+        display: block;
+        margin-top: .6rem;
+        font-family: 'Chillax-Medium';
+        font-weight: 500;
+        font-size: 8rem;
+        line-height: 105%;
+        letter-spacing: 0;
+        color: #FFFFFF;
+    }
+}

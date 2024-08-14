@@ -1,0 +1,57 @@
+mixin workshop_details(date, src, teacher, language, location_office, location_street, location_city)
+    ul.details
+        li.details__flex
+            h3.details__question Date
+
+            p.details__answer= date
+
+        li.details__flex
+            h3.details__question Teacher
+
+            p.details__answer
+                span.details__image
+                    img(src= src, alt= teacher)
+                span!= '&ensp;' + teacher
+
+        li.details__flex
+            h3.details__question Language
+
+            p.details__answer= language
+
+        li.details__flex
+            h3.details__question Location
+
+            .details__address
+                p.details__answer= location_office
+                p.details__answer= location_street
+                p.details__answer= location_city
+
+mixin workshop_menu(src, title, paragraph)
+    .block
+        .workshop__image
+            img(src= src, alt= title)
+
+        .includes
+            .workshop__courses
+                h4= title
+
+                p= paragraph
+
+mixin workshop_teacher(src, title, paragraph)
+    .block
+        .workshop__image2
+            img(src= src, alt= title)
+
+        .includes
+            .workshop__courses
+                h4= title
+
+                p= paragraph
+
+                .socials
+                    .socials__img
+                        img(src="img/insta.svg", alt="instagram logo")
+                    .socials__img
+                        img(src="img/fb.svg", alt="facebook logo")
+                    .socials__img
+                        img(src="img/twt.svg", alt="twitter logo")

@@ -1,0 +1,15 @@
+.price {
+    width: 100%;
+    max-width: 14rem;
+    font-family: 'Chillax-Regular';
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.6;
+    color: #ffffff;
+    text-align: end;
+
+    span {
+        color: #7B7A7A;
+        text-decoration: line-through;
+    }
+}

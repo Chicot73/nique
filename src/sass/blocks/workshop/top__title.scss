@@ -1,0 +1,25 @@
+.top__title {
+    font-family: 'Chillax-Medium';
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 1;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    position: relative;
+    padding-top: 3.4rem;
+    padding-bottom: 1.6rem;
+}
+
+.top__title::before {
+    content: "Cooking Class";
+    font-family: 'Chillax-Regular';
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1;
+    letter-spacing: 0;
+    color: #CCCDCD;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15rem;
+}

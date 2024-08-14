@@ -1,0 +1,22 @@
+.subtitle {
+    text-align: center;
+    font-family: 'Bitter Rose DEMO';
+    font-weight: 400;
+    font-size: 6.4rem;
+    line-height: 70%;
+    color: #FACE8D;
+    user-select: none;
+    letter-spacing: .03em;
+    padding-bottom: .7rem;
+
+    & span {
+        display: block;
+        font-family: 'Chillax-Medium';
+        font-weight: 500;
+        font-size: 4rem;
+        line-height: 1;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        padding-top: .7rem;
+    }
+}

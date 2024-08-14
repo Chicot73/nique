@@ -1,0 +1,16 @@
+.workshop__image2 {
+    width: 10rem;
+    height: 10rem;
+    flex-shrink: 0;
+
+    picture {
+        width: 100%;
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            border-radius: 50%;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Bitter Rose DEMO';
+    src: url('../fonts/BitterRoseDEMO-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans/OpenSans-Regular.eot');
+    src: local('Open Sans Regular'), local('OpenSans-Regular'),
+        url('../fonts/OpenSans/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans/OpenSans-Regular.woff') format('woff'),
+        url('../fonts/OpenSans/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Chillax-Regular';
+    src: url('../fonts/Chillax-Regular.woff2') format('woff2'),
+        url('../fonts/Chillax-Regular.woff') format('woff'),
+        url('../fonts/Chillax-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: fallback;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Chillax-Medium';
+    src: url('../fonts/Chillax-Medium.woff2') format('woff2'),
+        url('../fonts/Chillax-Medium.woff') format('woff'),
+        url('../fonts/Chillax-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-display: fallback;
+    font-style: normal;
+}

@@ -1,0 +1,7 @@
+.block {
+    padding: 1.4rem 2.4rem 1.4rem 1.8rem;
+    display: grid;
+    grid-template-columns: minmax(11.4rem, 12.4rem) auto;
+    align-items: center;
+    position: relative;
+}

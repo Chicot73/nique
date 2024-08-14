@@ -1,0 +1,182 @@
+section.menu
+    .menu__dummy(id="menu_dummy")
+    .wrapper
+        .left
+            h2.title2(id="menu") Check Out<br>
+                span Our Menus
+                
+        .right
+            .menuup
+                nav.menuup__items
+                    a(onclick="menuup01Fn()") Starters
+
+                    a(onclick="menuup02Fn()") Breakfast
+
+                    a(onclick="menuup03Fn()") Dinner
+
+                    a Wine
+
+                    a(onclick="menuup04Fn()") Drinks
+                //- .partition
+
+            .menu__wrapper
+                .article(id="starters")
+                    h3.title3 Starters
+
+                    mixin course(src, alt, title, paragraph, old_price, new_price, day_item )
+                        .block(class!=attributes.class)
+                            label.none= day_item + ' of the Day'
+                            .menu__image
+                                img(src= src, alt= alt)
+
+                            .includes
+                                .menu__courses
+                                    h4=title
+                                        if block
+                                            block
+                                        else
+
+                                    p= paragraph
+
+                                p.price!= '<span>' + old_price + '</span>' + '&ensp;' + new_price
+                    
+                    +course(
+                        "img/image.png",
+                        "burger1",
+                        "Tomato Toast",
+                        "Lorem ipsum dolor sit amet, consectetur",
+                        "",
+                        "$26",
+                        ""
+                        )
+                        span
+                            img(src="img/letter.svg", alt="vegeterian")
+                    +course(
+                        "img/image-1.png",
+                        "soup 1",
+                        "Noodle Soup",
+                        "Lorem ipsum dolor sit amet, consectetur",
+                        "$8.00",
+                        "$5.00",
+                        ""
+                        )
+                    +course(
+                        "img/image-2.png",
+                        "soup 2",
+                        "Pumpkin Soup",
+                        "Lorem ipsum dolor sit amet, consectetur",
+                        "",
+                        "$5.00",
+                        "Starter"
+                        )(class="day-item")
+
+                .article(id="breakfast")
+                    h3.title3 Breakfast
+                    
+                    +course(
+                        "img/image-3.png",
+                        "Pancakes",
+                        "Delicious Pancakes",
+                        "Lorem ipsum dolor sit amet, consectetur",
+                        "$12.50",
+                        "$5.00",
+                        ""
+                        )
+                    +course(
+                        "img/image-4.png",
+                        "pizza1",
+                        "Sweet Heaven",
+                        "Lorem ipsum dolor sit amet, consectetur",
+                        "",
+                        "$5.00",
+                        ""
+                        )
+                    +course(
+                        "img/image-5.png",
+                        "fruit",
+                        "Oatmeal Spirit",
+                        "Lorem ipsum dolor sit amet, consectetur",
+                        "",
+                        "$5.00",
+                        "Breakfast"
+                        )(class="day-item")
+                    +course(
+                        "img/image-6.png",
+                        "appetiser",
+                        "Avocado Smash",
+                        "Lorem ipsum dolor sit amet, consectetur",
+                        "",
+                        "$5.00",
+                        ""
+                        )
+
+                .article(id="dinner")
+                    h3.title3 Dinner
+                    
+                    +course(
+                        "img/image-7.png",
+                        "pizza2",
+                        "Italian Pizza",
+                        "Tomatillo, Baja Crema, Cabbage, Fried Okra",
+                        "$10.00",
+                        "$5.00",
+                        ""
+                        )
+                    +course(
+                        "img/image-8.png",
+                        "pizza3",
+                        "Sea Curry",
+                        "Tomatillo, Baja Crema, Cabbage, Fried Okra",
+                        "",
+                        "$7.00",
+                        ""
+                        )
+                    +course(
+                        "img/image-9.png",
+                        "burger2",
+                        "Vegan Burger",
+                        "Tomatillo, Baja Crema, Cabbage, Fried Okra",
+                        "",
+                        "$15.00",
+                        "Lunch"
+                        )(class="day-item")
+                    +course(
+                        "img/image-10.png",
+                        "course of aggs",
+                        "Noodle Bowl",
+                        "Tomatillo, Baja Crema, Cabbage, Fried Okra",
+                        "",
+                        "$5.00",
+                        ""
+                        )
+
+                .article(id="drinks")
+                    h3.title3 Drinks
+                    
+                    +course(
+                        "img/image-11.png",
+                        "tonic",
+                        "Panthouse Tonic",
+                        "Tomatillo, Baja Crema, Cabbage, Fried Okra",
+                        "$7.00",
+                        "$5.00",
+                        ""
+                        )
+                    +course(
+                        "img/image-12.png",
+                        "apple juice",
+                        "Apple Breeze",
+                        "Tomatillo, Baja Crema, Cabbage, Fried Okra",
+                        "",
+                        "$4.00",
+                        ""
+                        )
+                    +course(
+                        "img/image-13.png",
+                        "lemon juice",
+                        "Frenchman Blitz",
+                        "Tomatillo, Baja Crema, Cabbage, Fried Okra",
+                        "",
+                        "$5.00",
+                        ""
+                        )
