@@ -1,0 +1,73 @@
+extends layout/app-asian
+
+block page
+
+    nav.navigation3
+        a(title="Working Hours", id="clocks")
+            img(src="img/time.svg", alt="Working hours")
+        a(href="index.html#menu_dummy") Menu
+        a(href="index.html#restaurant_dummy") Restaurant
+        a(href="index.html#classes") Classes
+        a(href="#") Book a Table
+            aside.times.leftabs.active(id="times")
+                table
+                    caption Opening Hours
+
+                    tbody
+                        tr
+                            td.firstcol Mon
+
+                            td.lastcol closed
+
+                        tr
+                            td.firstcol Tue - Fri
+
+                            td.lastcol 4pm - 8pm
+
+                        tr
+                            td.firstcol Sat - Sun
+
+                            td.lastcol 5pm - 11pm
+
+    include chunk/mixins
+
+    .bookatable__img
+        img(src="img/book.jpg", alt="asian")
+
+    section.bookatable
+        .bookatable__dummy
+        .bookatable__wrap
+            .left.workshop__title
+                .workshop__logo
+                    a(href="index.html", title="main") nique.
+
+                h1.title2 Book a table<br>
+                    span Reservation
+                    
+            .right
+                .bookatable__wrapper
+                    .topper
+                        h2.topper__title Book a table
+                        p.topper__article
+                            | Our dining atmosphere is casual and comfortable. To reflect this environment, we maintain a formal dress.
+
+                    form.form(action="", method="get")
+                        label.form__label(for="name") Name
+                            input.form__input(id="name" type="text" placeholder="Your name") 
+
+                        label.form__label(for="guests") Guests
+                            input.form__input(id="guests" type="text" placeholder="2")
+
+                        .form__date 
+                            .form__part
+                                label.form__label(for="name") Date
+                                    input.form__input(id="name" type="date" placeholder="19.08.22")
+
+                            .form__part
+                                label.form__label(for="name") Time
+                                    input.form__input(id="name" type="time" placeholder="6:00pm") 
+
+                    .booking
+                        a.booking__button Book a table
+
+    script(src="js/menu.js")

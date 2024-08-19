@@ -1,0 +1,61 @@
+section.blog
+    .blog__dummy(id="blog_dummy")
+    .wrapper
+        .left
+            h2.title2(id="blog") Blog<br>
+                span Latest News
+                
+        .right
+            .blog__wrapper
+                mixin blog(href, src, alt, title, date)
+                    a.blog__card(href= href)
+                        .blog__image
+                            img(src= src, alt= alt)
+
+                        .blog__textcard
+                            h3.blog__title3= title
+                                span!= date
+
+                            p.blog__article
+                                | Lorem ipsum dolor sit amet, consectetur adipiscing 
+                                | elit eo ut vitae neque sed sed sit sagittis tristique 
+                                | scelerisque.
+
+                +blog(
+                    "gatsby.html",
+                    "img/blog01.jpg",
+                    "Gatsby Night",
+                    "Gatsby Night",
+                    "September 19, 2022"
+                    )
+
+                +blog(
+                    "service.html",
+                    "img/blog02.jpg",
+                    "Services Standard",
+                    "Services Standard",
+                    "October 02, 2022"
+                    )
+                
+                +blog(
+                    "newrestaurant.html",
+                    "img/blog03.jpg",
+                    "New Restaurant",
+                    "New Restaurant",
+                    "January 12, 2023"
+                    )
+
+                +blog(
+                    "romantic.html",
+                    "img/blog04.jpg",
+                    "Romantic Dinner",
+                    "Romantic Dinner",
+                    "July 11, 2023"
+                    )
+                +blog(
+                    "kitchen.html",
+                    "img/blog05.jpg",
+                    "Brand New Kitchen",
+                    "Brand New Kitchen",
+                    "November 26, 2023"
+                    )

@@ -1,0 +1,10 @@
+.blog__image {
+    display: block;
+    width: 28rem;
+    height: 21rem;
+    flex-shrink: 0;
+
+    & img {
+        border-radius: 1rem;
+    }
+}

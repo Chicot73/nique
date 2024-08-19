@@ -17,7 +17,7 @@ block page
 
     include chunk/restaurant
 
-    .fixed
+    .fixed.index
         img(src="img/main.avif", alt="bg")
 
     .fixed.menu__img
@@ -26,6 +26,18 @@ block page
     include chunk/menu
 
     include chunk/classes
+
+    .fixed.shop__img.shop__index
+        img(src="img/gift.jpg", alt="shop")
+
+    include chunk/shop
+
+    .fixed.blog__img.blog__index
+        img(src="img/blog.jpg", alt="blog")
+
+    include chunk/blog
+
+    include chunk/contact
 
     include chunk/footer
 

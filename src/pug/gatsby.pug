@@ -1,0 +1,88 @@
+extends layout/app-gatsby
+
+block page
+
+    nav.navigation
+        a(title="Working Hours", id="clocks")
+            img(src="img/time.svg", alt="Working hours")
+        a(href="index.html#menu_dummy") Menu
+        a(href="index.html#restaurant_dummy") Restaurant
+        a(href="index.html#classes") Classes
+        a(href="bookatable.html") Book a Table
+            aside.times.hidden(id="times")
+                table
+                    caption Opening Hours
+
+                    tbody
+                        tr
+                            td.firstcol Mon
+
+                            td.lastcol closed
+
+                        tr
+                            td.firstcol Tue - Fri
+
+                            td.lastcol 4pm - 8pm
+
+                        tr
+                            td.firstcol Sat - Sun
+
+                            td.lastcol 5pm - 11pm
+
+    .blog-article__img
+        img(src="img/blog01big.jpg", alt="Gatsby Night")
+
+    section.blog-article
+        .blog-article__dummy
+        .blog-article__wrap
+            .left.blog-article__title
+                .blog-article__logo
+                    a(href="index.html", title="main") nique.
+
+                h1.title2 September 19, 2022<br>
+                    span Gatsby Night
+                    
+            .right
+                .blog-article__wrapper
+                    .topper
+                        h2.topper__title Lorem ipsum dolor
+                        p.topper__article
+                            | Lorem ipsum dolor sit amet, consectetur adipiscing 
+                            | elit, sed do eiusmod tempor incididunt ut labore et 
+                            | dolore magna aliqua. Integer malesuada nunc vel risus 
+                            | commodo viverra maecenas. Dis parturient montes 
+                            | nascetur ridiculus mus mauris vitae ultricies. 
+                            | Placerat duis ultricies lacus sed turpis. Vel elit 
+                            | scelerisque mauris pellentesque pulvinar pellentesque 
+                            | habitant morbi tristique. Turpis massa sed elementum 
+                            | tempus egestas sed sed risus. 
+
+                        .blog-article__newsimg
+                            img(src="img/blog03lrg.jpg", alt="news1")
+
+                        p.topper__article
+                            | Lorem ipsum dolor sit amet, consectetur adipiscing 
+                            | elit, sed do eiusmod tempor incididunt ut labore et 
+                            | dolore magna aliqua. Integer malesuada nunc vel risus 
+                            | commodo viverra maecenas. Dis parturient montes 
+                            | nascetur ridiculus mus mauris vitae ultricies. 
+                            | Placerat duis ultricies lacus sed turpis. Vel elit 
+                            | scelerisque mauris pellentesque pulvinar pellentesque 
+                            | habitant morbi tristique. Turpis massa sed elementum 
+                            | tempus egestas sed sed risus. <br><br>
+                            | Velit ut tortor pretium viverra. Vivamus arcu felis 
+                            | bibendum ut. Quis enim lobortis scelerisque fermentum 
+                            | dui faucibus in ornare. Fusce ut placerat orci nulla 
+                            | pellentesque dignissim enim. <br><br>
+                            | Congue eu consequat ac felis donec et. Feugiat 
+                            | vivamus at augue eget arcu dictum. Scelerisque felis 
+                            | imperdiet proin fermentum leo vel orci. Auctor urna 
+                            | nunc id cursus metus aliquam eleifend mi. Facilisis 
+                            | mauris sit amet massa vitae tortor condimentum 
+                            | lacinia. Eget arcu dictum varius duis at consectetur 
+                            | lorem. Magna eget est lorem ipsum.
+
+    include chunk/footer
+
+    script(src="js/menu.js")
+    script(src="js/time.js")

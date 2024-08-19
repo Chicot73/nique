@@ -1,5 +1,9 @@
-.menu__img {
+.menu__img,
+.shop__img,
+.blog__img {
     width: 50%;
     height: 100vh;
     display: none;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
 }

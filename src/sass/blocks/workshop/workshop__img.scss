@@ -1,4 +1,11 @@
-.workshop__img {
+.workshop__img,
+.bookatable__img,
+.blog-article__img {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    z-index: 1;
     width: 50%;
     height: 100vh;
 

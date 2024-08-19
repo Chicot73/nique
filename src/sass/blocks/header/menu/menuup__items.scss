@@ -1,6 +1,5 @@
 .menuup__items {
     display: flex;
-    //padding: 0 16.8rem 0 16.8rem;
     align-items: center;
     justify-content: center;
 
@@ -13,8 +12,7 @@
         font-weight: 400;
         font-size: 1.6rem;
         line-height: 160%;
-        color: #FFFFFF;
-        opacity: .8;
+        color: #CCCDCD;
         flex-shrink: 0;
         cursor: pointer;
         transition: color .2s ease;
@@ -22,6 +20,5 @@
 
     a:hover {
         color: #FACE8D;
-        opacity: 1;
     }
 }

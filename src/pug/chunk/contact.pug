@@ -1,0 +1,29 @@
+section.contact
+    .contact__dummy(id="contact_dummy")
+    .wrapper
+        .left
+            h2.title2(id="contact") Contact<br>
+                span Get in Touch
+                
+        .right
+            .bookatable__wrapper
+                .topper
+                    p.topper__article
+                        | Volutpat maecenas volutpat blandit aliquam etiam erat 
+                        | velit scelerisque. Arcu non odio euismod lacinia. Tortor 
+                        | aliquam nulla facilisi cras fermentum odio eu.
+
+                form.form(action="", method="get")
+                    label.form__label(for="nameCont") Enter your name
+                        input.form__input(id="nameCont" type="text" placeholder="Your name") 
+
+                    label.form__label(for="email") Email
+                        input.form__input(id="email" type="email" placeholder="your@email")
+
+                    label.form__label(for="message") Message
+                        textarea.form__input(id="message" name="message" type="text" placeholder="Your message")
+
+                .booking
+                    a.booking__button share a contact
+
+script(src="js/menu.js")

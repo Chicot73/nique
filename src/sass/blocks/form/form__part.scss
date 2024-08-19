@@ -1,0 +1,11 @@
+.form__part {
+    width: 50%;
+
+    &:first-child {
+        padding-right: 1.6rem;
+    }
+
+    &:last-child {
+        padding-left: 1.6rem;
+    }
+}

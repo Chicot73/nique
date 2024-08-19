@@ -1,0 +1,100 @@
+extends layout/app-italian2
+
+block page
+
+    nav.navigation2
+        a(title="Working Hours", id="clocks")
+            img(src="img/time.svg", alt="Working hours")
+        a(href="index.html#menu_dummy") Menu
+        a(href="index.html#restaurant_dummy") Restaurant
+        a(href="index.html#classes") Classes
+        a(href="bookatable.html") Book a Table
+            aside.times.hidden(id="times")
+                table
+                    caption Opening Hours
+
+                    tbody
+                        tr
+                            td.firstcol Mon
+
+                            td.lastcol closed
+
+                        tr
+                            td.firstcol Tue - Fri
+
+                            td.lastcol 4pm - 8pm
+
+                        tr
+                            td.firstcol Sat - Sun
+
+                            td.lastcol 5pm - 11pm
+
+    include chunk/mixins
+
+    .workshop__img
+        img(src="img/class12.jpg", alt="asian")
+
+    section.workshop
+        .workshop__dummy
+        .wrapper
+            .left.workshop__title
+                .workshop__logo
+                    a(href="#", title="main") nique.
+
+                h1.title2(id="asian") Classes<br>
+                    span Homemade Honey
+                    
+            .right
+                .workshop__wrapper
+                    .top
+                        h2.top__title Reserve Your Spot
+                        p.top__article
+                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                            | eiusmod tempor incididunt ut labore et dolore magna aliqua. Porttitor 
+                            | massa id neque aliquam.
+                    
+                    .book
+                        a.book__button Book a Spot
+                        p.book__cost 89€
+
+                    .article
+                        h3.title3 Details
+
+                        +workshop_details(
+                            "November 25, 2023 04:00 PM",
+                            "img/teacher05.jpg",
+                            "Jaime Lemens",
+                            "Deuch",
+                            "nique.",
+                            "Main Street 16",
+                            "10629 Berlin"
+                            )
+
+                    .article
+                        h3.title3 Menu
+
+                        +workshop_menu(
+                            "img/image-3.png",
+                            "Pancakes with honey",
+                            "Lorem ipsum dolor sit amet, consectetur"
+                            )
+
+                        +workshop_menu(
+                            "img/image-13.png",
+                            "Frenchman Blitz",
+                            "Lorem ipsum dolor sit amet, consectetur"
+                            )
+
+                    .article
+                        h3.title3 Teacher
+
+                        +workshop_teacher(
+                            "img/teacher05.jpg",
+                            "Jaime Lemens",
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+                            )
+
+    include chunk/footer
+
+    script(src="js/menu.js")
+    script(src="js/time.js")

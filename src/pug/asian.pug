@@ -8,7 +8,7 @@ block page
         a(href="index.html#menu_dummy") Menu
         a(href="index.html#restaurant_dummy") Restaurant
         a(href="index.html#classes") Classes
-        a(href="index.html") Book a Table
+        a(href="bookatable.html") Book a Table
             aside.times.hidden(id="times")
                 table
                     caption Opening Hours
@@ -31,7 +31,7 @@ block page
 
     include chunk/mixins
 
-    .fixed.workshop__img
+    .workshop__img
         img(src="img/class52.jpg", alt="asian")
 
     section.workshop
@@ -41,7 +41,7 @@ block page
                 .workshop__logo
                     a(href="#", title="main") nique.
 
-                h1.title2(id="asian") Workshop<br>
+                h1.title2(id="asian") Classes<br>
                     span Delicious Breakfast
                     
             .right
@@ -96,4 +96,5 @@ block page
 
     include chunk/footer
 
-    script(src="js/workshop.js")
+    script(src="js/menu.js")
+    script(src="js/time.js")

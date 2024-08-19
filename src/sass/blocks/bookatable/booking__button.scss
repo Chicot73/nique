@@ -1,0 +1,25 @@
+.booking__button,
+.blog-article__button {
+    background-color: #F8D49E;
+    display: grid;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 50rem;
+    padding: 0 3.2rem;
+    font-family: 'Chillax-Medium';
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    letter-spacing: 0.06em;
+    color: #000000;
+    cursor: pointer;
+    transition: background-color .2s ease-in-out;
+
+    &:hover {
+        background-color: #FFFFFF;
+        color: #000000;
+    }
+}

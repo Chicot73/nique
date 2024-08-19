@@ -71,7 +71,6 @@
 
 window.addEventListener('DOMContentLoaded', () => {
 
-    let body = document.querySelector("body");
     let mouse = document.querySelector(".mouse");
     //let oneScroll = 0;
 
@@ -93,13 +92,18 @@ window.addEventListener('DOMContentLoaded', () => {
             let menu = document.querySelector(".menu__dummy");
             let dinner = document.getElementById("dinner");
             let drinks = document.getElementById("drinks");
-            // let classes = document.querySelector(".classes__dummy");
+            let classes = document.querySelector(".classes");
+            let classesOut = document.querySelector(".classes__dummy2");
+            let blog = document.getElementById("blog");
             let station01 = restaurant.getBoundingClientRect().top;
             let station01out = restaurantSpan.getBoundingClientRect().bottom;
             let station02 = menu.getBoundingClientRect().top;
-            // let station03 = classes.getBoundingClientRect().top;
             let station02out = dinner.getBoundingClientRect().bottom;
             let station02out2 = drinks.getBoundingClientRect().bottom;
+            let station03out = classes.getBoundingClientRect().top;
+            let station03out2 = classesOut.getBoundingClientRect().top;
+            let station04 = blog.getBoundingClientRect().top;
+
 
             if (lastScrollTop < top) {
                 let downMenu = document.getElementById("downmenu");
@@ -128,9 +132,31 @@ window.addEventListener('DOMContentLoaded', () => {
                     document.querySelector(".menu__wrapper").style.paddingTop = 0;
                     document.querySelector(".logo").classList.remove("logo__onleft");
                 }
+                if (station03out <= 0) {
+                    document.querySelector(".menu__img").style.display = "none";
+                    document.querySelector(".shop__img").style.display = "block";
+                }
+                if (station03out2 <= 0) {
+                    document.querySelector(".logo").classList.add("logo__onleft");
+                    document.querySelector(".blog__img").style.display = "block";
+                }
+                if (station04 <= 800) {
+                    document.querySelector(".shop__img").classList.add("hide");
+                }
 
             } else if (lastScrollTop > top) {
 
+                if (station04 >= 800) {
+                    document.querySelector(".shop__img").classList.remove("hide");
+                }
+                if (station03out2 >= 0) {
+                    document.querySelector(".logo").classList.remove("logo__onleft");
+                    document.querySelector(".blog__img").style.display = "none";
+                }
+                if (station03out >= 0) {
+                    document.querySelector(".menu__img").style.display = "block";
+                    document.querySelector(".shop__img").style.display = "none";
+                }
                 if (station02out2 >= 0) {
                     document.querySelector(".menuup").classList.add("menuup__sticky");
                     document.querySelector(".menu__wrapper").style.paddingTop = 8.4 + 'rem';
@@ -184,7 +210,6 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     timesIcons.addEventListener("mouseout" || "click", quitTimes);
-    //timesIcons.addEventListener("mouseout" || "click", function () { setTimeout(quitTimes, 500) });
 
 
 
@@ -223,7 +248,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 
-    //Прокрутка до меню
+    /* //Прокрутка до меню
 
     function throttle(func, ms) {
 
@@ -254,7 +279,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
         return wrapper;
     }; //это функция для торможения срабатывания события "scroll"
-
+ */
     //let f1000 = throttle(scrollHandler, 750);
     //let f2000 = throttle(letSticky, 150);
     //это подключение с аргументами: что подрубать и время в мс
@@ -262,117 +287,6 @@ window.addEventListener('DOMContentLoaded', () => {
     //window.addEventListener("scroll", f1000);
     //body.addEventListener("scroll", f2000);
 
-    let menu = document.querySelector(".menu");
-
-    /* function scrollHandler() {
-        function getCoords(menu) {
-            let box = menu.getBoundingClientRect();
- 
-            return {
-                top: box.top + window.scrollY  //расстояние от верха экрана до верха эл-та + пройденная прокрутка от верха страницы
-            }
-        }
- 
-        let coords = getCoords(menu);
-        let scrl = window.scrollY;
-        //let scrl = document.body.scrollTop; //пройденная прокрутка от верха страницы
-        let counter = 0;
- 
- 
-        // window.onwheel = function (e) {
-        //     // if (e.deltaY < 0) { };
-        //     if (e.deltaY > 0) {
-        //         if (scrl >= coords.top - 900) {
-        //             let GoToMenu = setTimeout(function () {
-        //                 window.scrollTo({
-        //                     top: coords.top,
-        //                     behavior: 'smooth',
-        //                 });
-        //                 // window.removeEventListener("scroll", f1000);
-        //                 // clearTimeout(GoToMenu, 1);
-        //             }, 1)
-        //         }
-        //     }
-        // }
- 
-        // window.onwheel = function (e) {
- 
-        //     if (e.deltaY < 0) {
-        //         counter++;
-        //         if (counter == 1) {
-        //             document.getElementById('restaurant').scrollIntoView({
-        //                 block: 'start',
-        //                 behavior: 'smooth'
-        //             })
-        //             // window.removeEventListener("scroll", f1000);
-        //         };
-        //         if (counter == 2) {
-        //             document.body.scrollIntoView({
-        //                 block: 'start',
-        //                 behavior: 'smooth'
-        //             })
-        //             window.removeEventListener("scroll", f1000);
-        //         };
-        //     }
-        // }
- 
-        if (scrl >= coords.top - 900) {
-            console.log('yes');
-            window.scrollTo({
-                top: coords.top,
-                behavior: 'smooth',
-            });
-            window.removeEventListener("scroll", f1000);
-            scrl = undefined;
-            coords.top = undefined;
-        }
- 
- 
- 
- 
- 
- 
-        // let scrollMax;
-        // window.onscroll = function () {
-        //     scrollMax = 50;
-        //     let scrl = window.scrollY;
-        //     scrl > 50 ? (stop = scrollMax)
-        //         : ('')
-        // }, history.scrollRestoration = "manual";
-    }; */
-
-    // let menuSticky = document.querySelector(".menuup");
-    // let counter = 0;
-    // function letSticky() {
-    /* function getCoords(menuSticky) {
- 
-        let box = menuSticky.getBoundingClientRect();
-        return {
-            top: box.top + body.scrollTop
-        }
-    }
-    let coords = getCoords(menuSticky);
-    let scrl = body.scrollTop;
-    console.log(scrl + ' --and-- ' + coords.top);
- 
-    if (counter >= 1) {
-        if (scrl < 1300) {
-            if (menuSticky.classList.contains('menuup__sticky')) {
-                menuSticky.classList.remove('menuup__sticky');
-            }
-            document.querySelector('.partition').style.height = 7.2 + 'rem';
-            counter == 0;
-        }
-    }
- 
-    if (scrl >= coords.top - 166) {
-        counter++;
- 
-        menuSticky.classList.add('menuup__sticky');
-        document.querySelector('.partition').style.height = 14.6 + 'rem';
- 
-    } */
-    // }
 
     /////анимация указателя прокрутки
 

@@ -27,7 +27,7 @@ mixin workshop_details(date, src, teacher, language, location_office, location_s
                 p.details__answer= location_city
 
 mixin workshop_menu(src, title, paragraph)
-    .block
+    .block.workshop__padding
         .workshop__image
             img(src= src, alt= title)
 
@@ -38,7 +38,7 @@ mixin workshop_menu(src, title, paragraph)
                 p= paragraph
 
 mixin workshop_teacher(src, title, paragraph)
-    .block
+    .block.workshop__padding2
         .workshop__image2
             img(src= src, alt= title)
 
@@ -55,3 +55,6 @@ mixin workshop_teacher(src, title, paragraph)
                         img(src="img/fb.svg", alt="facebook logo")
                     .socials__img
                         img(src="img/twt.svg", alt="twitter logo")
+
+mixin titleName(name)    
+    title= name

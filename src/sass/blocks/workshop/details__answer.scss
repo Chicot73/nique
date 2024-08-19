@@ -8,12 +8,21 @@
     color: #CCCDCD;
     position: relative;
     flex-grow: 50%;
+    position: relative;
 
     & span:first-child {
-        display: inline-block;
+        display: block;
+        position: absolute;
         width: 4rem;
         height: 4rem;
-        border-radius: 50%;
+        top: 50%;
+        left: -5rem;
+        transform: translate(0, -50%);
         flex-shrink: 0;
+
+        & img {
+            object-fit: contain;
+            border-radius: 50%;
+        }
     }
 }
