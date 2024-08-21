@@ -2,3 +2,9 @@
     left: 25% !important;
     transition: left 0.25s ease-in-out;
 }
+
+@media screen and (max-width: 39.93em) {
+    .logo__onleft {
+        left: 50% !important;
+    }
+}

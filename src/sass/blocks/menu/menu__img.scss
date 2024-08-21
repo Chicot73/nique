@@ -7,3 +7,12 @@
     opacity: 1;
     transition: opacity 1s ease-in-out;
 }
+
+@media screen and (max-width: 39.93em) {
+
+    .menu__img,
+    .shop__img,
+    .blog__img {
+        width: 100%;
+    }
+}

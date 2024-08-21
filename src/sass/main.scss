@@ -134,13 +134,31 @@ $base-font-size: 0.5952vw; //на разрешение 1680 - 100/1680 * 10px
 html,
 body {
     //background-color: #25252A;
-    font-size: $base-font-size;
+    //font-size: $base-font-size;
+    font-size: 0.5952vw;
     font-family: 'Chillax-Regular', Roboto, Arial, sans-serif;
     line-height: 1.5;
     // overflow-x: hidden;
     // overflow-y: scroll;
 }
 
+@media only screen and (max-width: 64em) {
+    html {
+        font-size: 0.75vw;
+    }
+}
+
+@media only screen and (max-width: 48em) {
+    html {
+        font-size: 0.9vw;
+    }
+}
+
+@media only screen and (max-width: 40em) {
+    html {
+        font-size: 7px;
+    }
+}
 
 body::-webkit-scrollbar {
     display: none;

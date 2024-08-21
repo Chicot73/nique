@@ -4,3 +4,10 @@
     transform: translate(0, 0) !important;
     position: fixed !important;
 }
+
+@media screen and (max-width: 39.93em) {
+    .title-fixed {
+        width: 100vw !important;
+        position: absolute !important;
+    }
+}
