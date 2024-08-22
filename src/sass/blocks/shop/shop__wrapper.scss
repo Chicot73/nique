@@ -1,3 +1,15 @@
 .shop__wrapper {
     padding: 9.6rem 8rem 14rem;
 }
+
+@media only screen and (max-width: 64em) {
+    .shop__wrapper {
+        padding: 9.6rem 6rem 14rem;
+    }
+}
+
+@media only screen and (max-width: 48em) {
+    .shop__wrapper {
+        padding: 9.6rem 4rem 14rem;
+    }
+}

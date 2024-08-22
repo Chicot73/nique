@@ -1,3 +1,15 @@
 .menu__wrapper {
     padding: 0 10rem 15rem;
 }
+
+@media only screen and (max-width: 64em) {
+    .menu__wrapper {
+        padding: 0 6rem 15rem;
+    }
+}
+
+@media only screen and (max-width: 48em) {
+    .menu__wrapper {
+        padding: 0 4rem 15rem;
+    }
+}

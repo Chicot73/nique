@@ -11,7 +11,17 @@
 
     & img {
         width: 100%;
-        height: auto;
+        height: 100%;
         object-fit: cover;
+    }
+}
+
+@media only screen and (max-width: 39.93em) {
+
+    .workshop__img,
+    .bookatable__img,
+    .blog-article__img {
+        position: absolute;
+        width: 100%;
     }
 }

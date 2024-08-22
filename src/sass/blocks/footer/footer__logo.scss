@@ -9,5 +9,10 @@
     font-size: 3.2rem;
     line-height: 90%;
     color: #FFFFFF;
+}
 
+@media only screen and (max-width: 25em) {
+    .footer__logo {
+        display: none;
+    }
 }

@@ -1,3 +1,15 @@
 .bookatable__wrapper {
     padding: 8.6rem 14rem 0;
 }
+
+@media only screen and (max-width: 64em) {
+    .bookatable__wrapper {
+        padding: 8.6rem 6rem 0;
+    }
+}
+
+@media only screen and (max-width: 48em) {
+    .bookatable__wrapper {
+        padding: 8.6rem 4rem 0;
+    }
+}

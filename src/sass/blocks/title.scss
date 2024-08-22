@@ -6,7 +6,7 @@
     line-height: 90%;
     color: #FACE8D;
     user-select: none;
-    letter-spacing: .03em;
+    letter-spacing: .02em;
     position: absolute;
     top: 43%;
     left: 50%;
@@ -19,5 +19,31 @@
         line-height: .9;
         color: #FFFFFF;
         letter-spacing: 0;
+    }
+}
+
+@media only screen and (max-width: 48em) {
+    .title {
+        font-size: 7.3rem;
+        letter-spacing: 0em;
+
+
+        span {
+            font-size: 15rem;
+            letter-spacing: -0.03em;
+        }
+    }
+}
+
+@media only screen and (max-width: 36em) {
+    .title {
+        font-size: 5rem;
+        letter-spacing: 0em;
+
+
+        span {
+            font-size: 10rem;
+            letter-spacing: -0.03em;
+        }
     }
 }

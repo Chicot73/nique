@@ -29,6 +29,7 @@
         background-color: #FFFFFF;
         flex-shrink: 0;
         transition: background-color .2s ease-in-out;
+        flex-shrink: 0;
 
         picture {
             display: block;
@@ -54,5 +55,21 @@
     a:last-child:hover {
         background-color: #150e04;
         color: #FACE8D;
+    }
+}
+
+@media screen and (max-width: 39.93em) {
+    .navigation {
+        bottom: 7rem;
+    }
+}
+
+@media only screen and (max-width: 36em) {
+    .navigation {
+        padding: .6rem 3.3rem .6rem 3.3rem;
+    }
+
+    .navigation a {
+        padding: 1rem;
     }
 }

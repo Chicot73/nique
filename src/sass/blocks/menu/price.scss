@@ -13,3 +13,9 @@
         text-decoration: line-through;
     }
 }
+
+@media only screen and (max-width: 48em) {
+    .price {
+        width: 12rem;
+    }
+}

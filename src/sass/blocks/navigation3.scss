@@ -50,3 +50,19 @@
         padding: 1.6rem 2.4rem;
     }
 }
+
+@media screen and (max-width: 39.93em) {
+    .navigation3 {
+        bottom: 7rem;
+    }
+}
+
+@media only screen and (max-width: 36em) {
+    .navigation3 {
+        padding: .6rem 3.3rem .6rem 3.3rem;
+    }
+
+    .navigation3 a {
+        padding: 1rem;
+    }
+}

@@ -16,3 +16,9 @@
     color: #FFFFFF;
     cursor: pointer;
 }
+
+@media screen and (max-width: 39.93em) {
+    .logo {
+        top: 8rem;
+    }
+}

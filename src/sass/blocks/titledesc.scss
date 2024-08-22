@@ -13,3 +13,15 @@
     left: 50%;
     transform: translate(-50%, 0);
 }
+
+@media only screen and (max-width: 48em) {
+    .titledesc {
+        font-size: 2.3rem;
+    }
+}
+
+@media only screen and (max-width: 36em) {
+    .titledesc {
+        font-size: 2rem;
+    }
+}

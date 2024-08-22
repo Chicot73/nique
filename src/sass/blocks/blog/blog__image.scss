@@ -8,3 +8,19 @@
         border-radius: 1rem;
     }
 }
+
+@media only screen and (max-width: 64em) {
+    .blog__image {
+        width: 22rem;
+        height: 16rem;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (max-width: 24.37em) {
+    .blog__image {
+        margin: 0 auto;
+        width: 28rem;
+        height: 21rem;
+    }
+}
