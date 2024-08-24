@@ -1,5 +1,5 @@
 .title-fixed {
-    width: 49.45vw !important;
+    width: 50% !important;
     left: 0 !important;
     top: 45% !important;
     transform: translate(0, -50%) !important;
@@ -8,7 +8,7 @@
 
 @media screen and (max-width: 39.93em) {
     .title-fixed {
-        width: 100vw !important;
+        width: 100% !important;
         position: absolute !important;
     }
 }
