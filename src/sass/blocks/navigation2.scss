@@ -13,6 +13,7 @@
     background-color: #FFFFFF;
     user-select: none;
     transition: opacity 2s ease-in-out;
+    width: max-content;
 
     a {
         text-decoration: none;
@@ -57,7 +58,7 @@
     }
 }
 
-@media screen and (max-width: 39.93em) {
+@media only screen and (max-width: 39.93em) {
     .navigation2 {
         bottom: 7rem;
     }
@@ -65,7 +66,8 @@
 
 @media only screen and (max-width: 36em) {
     .navigation2 {
-        padding: .6rem 3.3rem .6rem 3.3rem;
+        width: auto;
+        padding: .6rem 3.5rem;
     }
 
     .navigation2 a {

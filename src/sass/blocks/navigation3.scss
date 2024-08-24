@@ -1,6 +1,5 @@
 .navigation3 {
     position: fixed;
-    top: auto;
     bottom: 4rem;
     left: 25%;
     transform: translate(-50%, 0);
@@ -13,6 +12,7 @@
     background-color: #FFFFFF;
     user-select: none;
     transition: opacity 2s ease-in-out;
+    width: max-content;
 
     a {
         text-decoration: none;
@@ -53,13 +53,16 @@
 
 @media screen and (max-width: 39.93em) {
     .navigation3 {
+        position: absolute;
+        left: 50%;
         bottom: 7rem;
     }
 }
 
 @media only screen and (max-width: 36em) {
     .navigation3 {
-        padding: .6rem 3.3rem .6rem 3.3rem;
+        width: auto;
+        padding: .6rem 3.5rem;
     }
 
     .navigation3 a {

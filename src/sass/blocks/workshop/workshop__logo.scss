@@ -1,7 +1,7 @@
 .workshop__logo,
 .blog-article__logo {
-    width: 10rem;
     position: absolute;
+    width: 100%;
     z-index: 4;
     height: 9.3rem;
     user-select: none;
@@ -16,5 +16,17 @@
         font-size: 3.2rem;
         line-height: 90%;
         color: #FFFFFF;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 39.93em) {
+
+    .workshop__logo,
+    .blog-article__logo {
+        position: absolute;
+        top: 6.4rem;
+        left: 50%;
+        transform: translate(-50%, 0);
     }
 }

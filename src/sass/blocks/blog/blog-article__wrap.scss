@@ -1,6 +1,12 @@
 .blog-article__wrap {
     width: 100%;
     display: grid;
-    grid-template-columns: 50vw 50vw;
+    grid-template-columns: 50% 50%;
     background-color: #020405;
+}
+
+@media screen and (max-width: 39.93em) {
+    .blog-article__wrap {
+        display: block;
+    }
 }

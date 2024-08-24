@@ -2,14 +2,14 @@
     height: 15.5rem;
     position: fixed !important;
     background: linear-gradient(to bottom, #020405, #020405, transparent);
-    width: 50vw;
+    width: 49.45vw;
     top: 0;
     z-index: 1;
 }
 
 @media screen and (max-width: 39.93em) {
     .menuup__sticky {
-        width: 100vw;
+        width: 100%;
         height: 18rem;
     }
 }

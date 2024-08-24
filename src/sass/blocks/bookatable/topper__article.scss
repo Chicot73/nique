@@ -6,3 +6,9 @@
     line-height: 1.6;
     letter-spacing: 0;
 }
+
+@media only screen and (max-width: 48em) {
+    .topper__article {
+        font-size: 1.6rem;
+    }
+}

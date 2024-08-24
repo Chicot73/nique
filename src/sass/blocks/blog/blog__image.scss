@@ -3,9 +3,11 @@
     width: 28rem;
     height: 21rem;
     flex-shrink: 0;
+    clip-path: border-box;
 
     & img {
-        border-radius: 1rem;
+        border-radius: 1.5rem;
+        transition: all .3s ease-in;
     }
 }
 

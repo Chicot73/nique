@@ -1,10 +1,15 @@
 .form__label {
     display: block;
-    margin-bottom: 4.8rem;
     font-family: 'Chillax-Regular';
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.6;
     color: #9A9B9B;
     margin-bottom: 4.8rem;
+}
+
+@media only screen and (max-width: 64em) {
+    .form__label {
+        margin-bottom: 2.8rem;
+    }
 }

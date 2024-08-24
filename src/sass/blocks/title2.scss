@@ -1,19 +1,19 @@
 .title2 {
-    width: 100%;
+    width: 70vw;
     position: absolute;
     z-index: 2;
-    top: 37rem;
+    top: 45%;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, -50%);
     z-index: 2;
     text-align: center;
     font-family: 'Bitter Rose DEMO';
     font-weight: 400;
-    font-size: 8rem;
+    font-size: 6rem;
     line-height: 90%;
     color: #FACE8D;
     user-select: none;
-    letter-spacing: .03em;
+    letter-spacing: .04em;
 
     span {
         display: block;
@@ -24,5 +24,29 @@
         line-height: 105%;
         letter-spacing: 0;
         color: #FFFFFF;
+    }
+}
+
+@media only screen and (max-width: 48em) {
+    .title2 {
+        font-size: 6rem;
+
+        span {
+            font-size: 8rem;
+            letter-spacing: -0.03em;
+        }
+    }
+}
+
+@media only screen and (max-width: 36em) {
+    .title2 {
+        font-size: 5rem;
+        letter-spacing: 0em;
+
+
+        span {
+            font-size: 7rem;
+            letter-spacing: -0.03em;
+        }
     }
 }

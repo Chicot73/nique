@@ -164,7 +164,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 }
                 if (station02out >= 0) {
                     document.getElementById("menu").classList.add("title-fixed");
-                    document.getElementById("menu").style.top = 37 + "rem";
+                    document.getElementById("menu").style.top = 42 + "rem";
 
                 }
                 if (station02 >= 0) {

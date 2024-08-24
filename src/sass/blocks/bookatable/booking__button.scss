@@ -23,3 +23,11 @@
         color: #000000;
     }
 }
+
+@media only screen and (max-width: 64em) {
+
+    .booking__button,
+    .blog-article__button {
+        height: 5rem;
+    }
+}
